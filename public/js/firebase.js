@@ -11,3 +11,4 @@ let firebaseConfig = {
 
   let db = firebase.firestore();
 
+//FIREBASE SETUP 

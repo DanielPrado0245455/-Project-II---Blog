@@ -1,0 +1,178 @@
+:root{
+    --fuentePrincipal: 'Noto Serif', serif;
+    --rojo: #fa4753;
+    --negro: #17181C;
+    --blanco:#FFF;
+    --azulGrisaseo: #9BA5C9;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before,*:after{
+    box-sizing: inherit;
+}
+
+/* Globales */
+body{
+    color:var(--blanco); 
+    font-size: 12px;
+    background-color: var(--negro);
+    margin:2.5rem;
+    background:#2c3e50 ;
+    font-family: sans-serif;
+}
+
+
+.banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+
+/*Titulo*/
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin:0 0 1.5rem 0;
+    font-weight: bold;
+    font-size: 4rem;
+    background-color: var(--rojo);
+}
+
+/*Textos*/
+.h3{
+    display:flex;
+    justify-content: center;
+    margin: 1.75rem;
+    padding: 2.3rem;
+}
+.h3_text{
+    text-align: center;
+}
+
+/* Navbar */
+
+
+nav{
+    margin: 27px auto 0;
+    position: relative;
+    height: 50px;
+    background-color: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+
+}
+nav a{
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+    
+a:nth-child(1){
+    width: 160px;
+}
+a:nth-child(2){
+    width: 110px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+a:nth-child(4){
+    width: 100px;
+}
+a:nth-child(5){
+    width: 120px;
+}
+nav .start-pokenews, a:nth-child(1):hover~.animation{
+    width: 160px;
+    left: 0;
+    background-color: #1abc9c;
+}
+nav .start-nosotros, a:nth-child(2):hover~.animation{
+    width: 110px;
+    left: 160px;
+    background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation{
+    width: 100px;
+    left: 270px;
+    background-color: #3498db;
+}
+nav .start-noticias,a:nth-child(4):hover~.animation{
+    width: 100px;
+    left: 370px;
+    background-color: #9b59b6;
+}
+nav .start-contacto, a:nth-child(5):hover~.animation{
+    width: 120px;
+    left: 470px;
+    background-color: #e67e22;
+}
+
+span{
+    color: #2BD6B4;
+}
+
+
+/* cards */
+.card-deck{
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #56799C;
+}
+
+.card-title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+
+/* Carousel */
+.carousel{
+    margin-top: 50px;
+    width: 96%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 620px;
+}
+.carousel-item{
+    width: 100%;
+    height: 620px;
+}
+.w-100{
+    height: auto;
+    width: 100%
+}
+
