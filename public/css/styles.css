@@ -247,3 +247,12 @@ p{
     -webkit-overflow-scrolling: touch;
 }
 
+/* Body */
+
+.g-5{
+    margin-top: 50px;
+}
+
+.rounded{
+    background-color: #32475C;
+}
