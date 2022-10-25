@@ -17,6 +17,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/editor", (req, res) => {
+    res.render(path.join(ipath, "/views/editor"));    
+});
+
+app.get("/editor", (req, res) => {
     res.render(path.join(ipath, "/views/editor"));   
 });
 
