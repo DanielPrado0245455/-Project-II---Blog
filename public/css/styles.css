@@ -138,13 +138,32 @@ span{
 
 .card{
     background-color: #56799C;
+    width: 260px;
+    height: 460px;
 }
 
 .card-title{
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    font-size: 20px;
 }
 
+.card-text{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.text-mute{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    color: #79AADB;
+}
+
+.card-img-top{
+    width: auto;
+    height: 300px;
+}
 
 /* Carousel */
 .carousel{
@@ -162,6 +181,18 @@ span{
 .w-100{
     height: auto;
     width: 100%
+}
+
+h5{
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 /* footer */
@@ -215,3 +246,4 @@ span{
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
+

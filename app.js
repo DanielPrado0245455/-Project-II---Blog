@@ -16,8 +16,8 @@ app.get("/", (req, res) => {
     res.render(path.join(ipath, "/views/index"));    
 });
 
-app.get("/editor", (req, res) => {
-    res.render(path.join(ipath, "/views/editor"));    
+app.get("/blog", (req, res) => {
+    res.render(path.join(ipath, "/views/blog"));    
 });
 
 app.get("/editor", (req, res) => {
