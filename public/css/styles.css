@@ -132,6 +132,39 @@ span{
 }
 
 
+/* cards */
+.card-deck{
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #56799C;
+}
+
+.card-title{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+
+/* Corousel */
+.carousel{
+    margin-top: 50px;
+    width: 96%;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 620px;
+}
+.carousel-item{
+    width: 100%;
+    height: 620px;
+}
+.w-100{
+    height: auto;
+    width: 100%
+}
+
 /* Noticias */
 .noticia{
     display: grid;
