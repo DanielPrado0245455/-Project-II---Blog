@@ -20,7 +20,7 @@ body{
     font-size: 12px;
     background-color: var(--negro);
     margin:2.5rem;
-    background: #2c3e50;
+    background:#2c3e50 ;
     font-family: sans-serif;
 }
 .img{
@@ -106,7 +106,7 @@ nav .start-pokenews, a:nth-child(1):hover~.animation{
     left: 0;
     background-color: #1abc9c;
 }
-nav .start-about, a:nth-child(2):hover~.animation{
+nav .start-nosotros, a:nth-child(2):hover~.animation{
     width: 110px;
     left: 160px;
     background-color: #e74c3c;
@@ -116,12 +116,12 @@ nav .start-blog, a:nth-child(3):hover~.animation{
     left: 270px;
     background-color: #3498db;
 }
-nav .start-news,a:nth-child(4):hover~.animation{
+nav .start-noticias,a:nth-child(4):hover~.animation{
     width: 100px;
     left: 370px;
     background-color: #9b59b6;
 }
-nav .start-contact, a:nth-child(5):hover~.animation{
+nav .start-contacto, a:nth-child(5):hover~.animation{
     width: 120px;
     left: 470px;
     background-color: #e67e22;
@@ -165,19 +165,3 @@ span{
     width: 100%
 }
 
-/* Noticias */
-.noticia{
-    display: grid;
-    text-align: center;
-    margin: 1rem;
-
-}
-.noticia_titulo{
-    font-size: 4.5rem;
-    font-weight: bold;
-    margin: 2.5rem;
-}
-.noticia_texto{
-    font-size: 2.5rem;
-    margin: 2.5rem;     
-}
