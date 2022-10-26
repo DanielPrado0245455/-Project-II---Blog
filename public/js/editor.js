@@ -1,5 +1,4 @@
 const blogTitleField = document.querySelector('.title');
-
 const articleField = document.querySelector('.article');
 const bannerImage = document.querySelector('#banner-upload');
 const banner = document.querySelector(".banner");

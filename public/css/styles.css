@@ -104,7 +104,7 @@ a:nth-child(1){
     width: 160px;
 }
 
-
+a:nth-child(2){
     width: 100px;
 
 }
@@ -154,8 +154,8 @@ span{
 
 .card{
     background-color: #56799C;
-    width: 260px;
-    height: 460px;
+    width: 280px;
+    height: 500px;
 }
 
 .card-title{
