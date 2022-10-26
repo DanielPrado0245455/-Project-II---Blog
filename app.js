@@ -21,6 +21,7 @@ app.get("/editor", (req, res) => {
 });
 
 
+
 app.get("/:blog", (req, res) => {
     res.render(path.join(ipath, "/views/blog"));
 });
@@ -44,7 +45,9 @@ app.post('/upload', (req, res) => {
         if(err){
             throw err;
         } else{
+
             // send the upload to the uploads folder
+
             res.json(`uploads/${imagename}`)
         }
     })
