@@ -154,8 +154,13 @@ span{
 
 .card{
     background-color: #56799C;
+<<<<<<< Updated upstream
     width: 280px;
     height: 500px;
+=======
+    width: 260px;
+    height: 460px;
+>>>>>>> Stashed changes
 }
 
 .card-title{
