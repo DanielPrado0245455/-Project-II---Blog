@@ -7,6 +7,7 @@ const uploadInput = document.querySelector('#image-upload');
 
 
 let bannerPath;
+
 bannerImage.addEventListener('change', () => {
     uploadImage(bannerImage, "banner");
 })
@@ -17,6 +18,7 @@ uploadInput.addEventListener('change', () => {
 
 
 //using the upload-file module
+
 const uploadImage = (uploadFile, uploadType) => {
     const [file] = uploadFile.files;
     if(file && file.type.includes("image")){
@@ -30,6 +32,7 @@ const uploadImage = (uploadFile, uploadType) => {
         }).then(res => res.json())
         .then(data => {                 //checks if the image is going for a banner image or an image inside the article
             if(uploadType == "image"){  
+
                 addImage(data, file.name);
             } else{
                 bannerPath = `${location.origin}/${data}`;
@@ -59,6 +62,7 @@ publishBtn.addEventListener('click', () => {
             id += letters[Math.floor(Math.random() * letters.length)];
         }
 
+
         // sets up the name of the document that will be added to de firestor db
         let docName= `${blogTitle}-${id}`;
         let date = new Date(); // for published at info
@@ -71,6 +75,7 @@ publishBtn.addEventListener('click', () => {
             publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
         })
         .then(() => {
+
           location.href = `/${docName}`; // when made, it sends you to the finished blog page.
         })
         .catch((err) => {
