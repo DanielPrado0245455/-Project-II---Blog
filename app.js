@@ -20,22 +20,14 @@ app.get("/editor", (req, res) => {
     res.render(path.join(ipath, "/views/editor"));   
 });
 
-
-
 app.get("/:blog", (req, res) => {
     res.render(path.join(ipath, "/views/blog"));
 });
 
-app.use((req, res) => {
-    res.json("404");
-});
-
-
-//uploading images
 app.post('/upload', (req, res) => {
     let file = req.files.image;
     let date = new Date();
-    // imagename**id
+    // image name
     let imagename = date.getDate() + date.getTime() + file.name;
     // image upload path
     let path = 'public/uploads/' + imagename;
@@ -45,13 +37,14 @@ app.post('/upload', (req, res) => {
         if(err){
             throw err;
         } else{
-
-            // send the upload to the uploads folder
-
+            // our image upload path
             res.json(`uploads/${imagename}`)
         }
     })
 })
 
+app.use((req, res) => {
+    res.json("404");
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));
