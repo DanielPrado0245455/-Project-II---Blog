@@ -154,13 +154,8 @@ span{
 
 .card{
     background-color: #56799C;
-<<<<<<< Updated upstream
     width: 280px;
     height: 500px;
-=======
-    width: 260px;
-    height: 460px;
->>>>>>> Stashed changes
 }
 
 .card-title{
@@ -277,4 +272,28 @@ p{
 
 .rounded{
     background-color: #32475C;
+    margin-top: 10px;
+}
+
+/* Editor */
+
+.blogs-section{
+    width: 100%;
+    padding: 50px 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+
+.blog-image{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-overview{
+    margin: 10px 0 20px;
+    line-height: 30px;
 }

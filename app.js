@@ -20,6 +20,19 @@ app.get("/editor", (req, res) => {
     res.render(path.join(ipath, "/views/editor"));   
 });
 
+app.get("/news", (req, res) => {
+    res.render(path.join(ipath, "/views/news"));
+});
+
+app.get("/contact", (req, res) => {
+    res.render(path.join(ipath, "/views/contact"));
+});
+
+app.get("/about", (req, res) => {
+    res.render(path.join(ipath, "/views/about"));
+});
+
+
 app.get("/:blog", (req, res) => {
     res.render(path.join(ipath, "/views/blog"));
 });
