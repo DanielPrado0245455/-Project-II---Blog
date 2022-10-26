@@ -1,0 +1,40 @@
+﻿Teams & Personal Logs
+
+
+Team Log
+As a team we faced many challenges all the way of creating the project, in majority in the backend (JS), building was a challenge but in the end we broke through the problems. We also had the problem that we couldn’t get together to work as a team in person, but we had to do it virtually. That complicated the communication a little. Beyond that we just talked  about what we were going to do and how we were gonna do it and it went pretty well.
+
+
+
+
+Personal Log
+
+
+Diego: 
+For me this project was a punch with reality because I noticed I didn’t know as much as I thought I would. It was a really hard time also because I could not help my team as I wished I would. I help a little on the HTML, CSS and de JS but most of the work done in this project was done by my team. I wanted to help searching for useful information and also cool stuff to put in the blog, but in the end it was a waste of time, I tried also helping one time with something in the JS but one of my team members already had it, so it was a waste of time for me and for helping my team in the project. Of course we talked about what we were going to do and we kept contacting each other to see what we had and I helped a little bit, but I know I could have done more.
+
+
+Evaluating my team’s work:
+For what I saw my teammates are awesome, they are really hard working people, who want to do the best they can, present it the best way and also they love helping others no matter what. They helped me with my issues although they were doing more than me. They knew how to do what they wanted and if they didn’t they searched for it until they found it and accomplished it. Daniel did the best work for the front end and Zaid did the same for the back end. I really liked working alongside them.
+
+
+
+
+Zaid:
+Since i had a team, programming this web page went smoothly as ever. With the help of my teammates, I got enough time to concentrate on small code sections rather than doing everything at once. With that concentration, I could really polish things out, understand them and make the most out of them. 
+
+
+My team really helped me out when I was struggling with some bugs. I think all my team members did their part to deliver a good project. I have nothing to say against them.
+
+
+In this project, I collaborated with the backend implementation of the webpage. It was a little hard, as in setting a database and sending data to that database, but with the help of the class’s slides and some googling, I managed to work things out.
+
+
+I think I did the best I could in the backend, and I hope that is reflected in my grades. It is still far from perfect, i'm still learning, but as time goes I think this webpage is something to be proud of.
+
+
+Daniel:
+For me the project was a great way to learn how to work in a team. I really enjoyed doing this project because we all learned something new doing the Blog. 
+In this project, I took the command in doing the FrontEnd and I think I did my best job. I wanted to make the best out of this project, so I searched for the best colors, the best way to make it look as beautiful as it could, and also I tried helping my teammates whenever they needed me.
+Of course I had times where I got stucked and needed help for myself, but in the end it all went smoothly as I wanted it to be. 
+I really hope you can enjoy this project because this is something that we all like and we thought it would be very interesting.
