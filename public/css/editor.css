@@ -23,6 +23,7 @@
 
 .banner-upload-btn img{
     width:20px ;
+    height: 20px;;
 }
 
 .blog{
@@ -45,7 +46,10 @@ textarea::-webkit-scrollbar-thumb{
 
 .title,
 .article{
+    
     width: 100%;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
     min-height: 100px;
     height: auto;
     outline: none;
@@ -64,6 +68,7 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .article{
+    font-family: "Nunito", sans-serif;
     height:500px;
     font-size: 20px;
     margin-top:20px;
@@ -74,6 +79,7 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .blog-options{
+    font-family: "Nunito", sans-serif;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -86,15 +92,39 @@ textarea::-webkit-scrollbar-thumb{
     align-items: center; 
 }
 
-.btn{
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
 
 .btn.grey{
+    font-family: "Nunito", sans-serif;
     background: #a5a5a5;
     color: #fff;
     margin-left: 20px;
     font-size: 14px;
 }
+
+
+.btn{
+    appearance: none;
+    font-family: "Nunito", sans-serif;
+    cursor: pointer;
+    background-color: #000000;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10px;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+
