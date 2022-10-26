@@ -8,7 +8,6 @@ const uploadInput = document.querySelector('#image-upload');
 
 let bannerPath;
 
-
 bannerImage.addEventListener('change', () => {
     uploadImage(bannerImage, "banner");
 })
@@ -18,10 +17,7 @@ uploadInput.addEventListener('change', () => {
 })
 
 
-
-
 //using the upload-file module
-
 
 const uploadImage = (uploadFile, uploadType) => {
     const [file] = uploadFile.files;
@@ -29,15 +25,11 @@ const uploadImage = (uploadFile, uploadType) => {
         const formdata = new FormData();
         formdata.append('image', file);
 
-
-
         //adds the image to the upload folder from the form data
         fetch('/upload', {
             method: 'post',
             body: formdata
         }).then(res => res.json())
-
-
         .then(data => {                 //checks if the image is going for a banner image or an image inside the article
             if(uploadType == "image"){  
 
@@ -52,7 +44,6 @@ const uploadImage = (uploadFile, uploadType) => {
     }
 }
 
-
 //transforms the image into a format for further use inside the blog page
 const addImage = (imagepath, alt) => {
     let curPos = articleField.selectionStart; // checks position in the article
@@ -64,7 +55,6 @@ let months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oc
 publishBtn.addEventListener('click', () => {
     if(articleField.value.length && blogTitleField.value.length){
         // generates an id for the article
-
         let letters = 'abcdefghijklmnopqrstuvwxyz';
         let blogTitle = blogTitleField.value.split(" ").join("-");
         let id = '';
@@ -81,15 +71,12 @@ publishBtn.addEventListener('click', () => {
         db.collection("blogs").doc(docName).set({
             title: blogTitleField.value,
             article: articleField.value,
-
             bannerImage: bannerPath,
             publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
         })
         .then(() => {
 
-
           location.href = `/${docName}`; // when made, it sends you to the finished blog page.
-
         })
         .catch((err) => {
             console.error(err);
