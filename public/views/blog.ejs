@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog : </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+
+</head>
+<body>
+    <div style="display: flex; justify-content:center;">
+        <nav style="display: flex; justify-content:center">
+            <a href="/" style="text-decoration: none;">
+                <img src="/images/icono.png" height="50px" width="50px"> Pokenews
+            </a>
+            <a href="/editor" style="text-decoration: none;">Crea un blog</a>
+            <a href="#" style="text-decoration: none;">Noticias</a>
+            <a href="#" style="text-decoration: none;">Contacto</a>
+            <a href="#" style="text-decoration: none;">Nosotros</a>
+            <div class="animation start-pokenews" ></div>
+        </nav>
+    </div>
+
+    <div class="banner"></div>
+
+    <div class="blog">
+        <h1 class="title"></h1>
+        <p class="published"><span>published at - </span></p>
+        <div class="article">
+        </div>
+    </div>
+    
+    <section class="blogs-section">
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>

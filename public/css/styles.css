@@ -23,6 +23,20 @@ body{
     background:#2c3e50 ;
     font-family: sans-serif;
 }
+
+
+
+
+.banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .img{
     display: flex;
     justify-content: center;
@@ -90,7 +104,9 @@ a:nth-child(1){
     width: 160px;
 }
 a:nth-child(2){
+
     width: 100px;
+
 }
 a:nth-child(3){
     width: 100px;
@@ -106,6 +122,7 @@ nav .start-pokenews, a:nth-child(1):hover~.animation{
     left: 0;
     background-color: #1abc9c;
 }
+
 
 nav .start-blog, a:nth-child(2):hover~.animation{
     width: 100px;
@@ -127,6 +144,7 @@ nav .start-nosotros, a:nth-child(5):hover~.animation{
     left: 480px;
     background-color: #e74c3c;
 }
+
 span{
     color: #2BD6B4;
 }
