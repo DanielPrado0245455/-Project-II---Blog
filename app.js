@@ -21,6 +21,7 @@ app.get('/news', (req,res)=>{
     res.render(path.join(ipath, '/views/news'))
 })
 
+
 app.get("/editor", (req, res) => {
     res.render(path.join(ipath, "/views/editor"));   
 });

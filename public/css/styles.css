@@ -103,7 +103,7 @@ nav .animation{
 a:nth-child(1){
     width: 160px;
 }
-a:nth-child(2){
+
 
     width: 100px;
 
@@ -122,8 +122,6 @@ nav .start-pokenews, a:nth-child(1):hover~.animation{
     left: 0;
     background-color: #1abc9c;
 }
-
-
 nav .start-blog, a:nth-child(2):hover~.animation{
     width: 100px;
     left: 160px;
@@ -144,7 +142,6 @@ nav .start-nosotros, a:nth-child(5):hover~.animation{
     left: 480px;
     background-color: #e74c3c;
 }
-
 span{
     color: #2BD6B4;
 }
@@ -157,13 +154,32 @@ span{
 
 .card{
     background-color: #56799C;
+    width: 260px;
+    height: 460px;
 }
 
 .card-title{
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    font-size: 20px;
 }
 
+.card-text{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.text-mute{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    color: #79AADB;
+}
+
+.card-img-top{
+    width: auto;
+    height: 300px;
+}
 
 
 /* Carousel */
@@ -184,3 +200,76 @@ span{
     width: 100%
 }
 
+h5{
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p{
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/* footer */
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Body */
+
+.g-5{
+    margin-top: 50px;
+}
+
+.rounded{
+    background-color: #32475C;
+}
