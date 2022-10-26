@@ -1,4 +1,3 @@
-
 let firebaseConfig = {
   apiKey: "AIzaSyCcU3Ccmm0bfAGnP4yRw4Hkn6oTygfc7n8",
   authDomain: "projectii-blog-ddz.firebaseapp.com",
@@ -13,3 +12,4 @@ let firebaseConfig = {
   let db = firebase.firestore();
 
 //FIREBASE SETUP 
+

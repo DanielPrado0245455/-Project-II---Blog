@@ -1,0 +1,42 @@
+main{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    text-align: center;
+    font-weight: bold;
+}
+
+article{
+  
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px;
+
+}
+p{
+    margin: 10px;
+    font-size: 20px;
+}
+images{
+    max-width: 100%;
+    
+}
+.noticia{
+    margin: 50px;
+}
+
+/* Card text */
+.card-text{
+    text-align: right;
+}

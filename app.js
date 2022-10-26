@@ -16,6 +16,11 @@ app.get("/", (req, res) => {
     res.render(path.join(ipath, "/views/index"));    
 });
 
+
+app.get('/news', (req,res)=>{
+    res.render(path.join(ipath, '/views/news'))
+})
+
 app.get("/editor", (req, res) => {
     res.render(path.join(ipath, "/views/editor"));   
 });
@@ -41,12 +46,15 @@ app.post('/upload', (req, res) => {
     let path = 'public/uploads/' + imagename;
 
     // create upload
+
     file.mv(path, (err, result) => {
         if(err){
             throw err;
         } else{
 
+
             // send the upload to the uploads folder
+
 
             res.json(`uploads/${imagename}`)
         }

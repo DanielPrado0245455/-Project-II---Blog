@@ -1,4 +1,5 @@
 const blogTitleField = document.querySelector('.title');
+
 const articleField = document.querySelector('.article');
 const bannerImage = document.querySelector('#banner-upload');
 const banner = document.querySelector(".banner");
@@ -7,6 +8,7 @@ const uploadInput = document.querySelector('#image-upload');
 
 
 let bannerPath;
+
 
 bannerImage.addEventListener('change', () => {
     uploadImage(bannerImage, "banner");
@@ -18,7 +20,9 @@ uploadInput.addEventListener('change', () => {
 
 
 
+
 //using the upload-file module
+
 
 const uploadImage = (uploadFile, uploadType) => {
     const [file] = uploadFile.files;
@@ -27,15 +31,17 @@ const uploadImage = (uploadFile, uploadType) => {
         formdata.append('image', file);
 
 
-        //adds the image to the upload folder from the form data
 
+        //adds the image to the upload folder from the form data
         fetch('/upload', {
             method: 'post',
             body: formdata
         }).then(res => res.json())
 
+
         .then(data => {                 //checks if the image is going for a banner image or an image inside the article
             if(uploadType == "image"){  
+
                 addImage(data, file.name);
             } else{
                 bannerPath = `${location.origin}/${data}`;
@@ -67,6 +73,7 @@ publishBtn.addEventListener('click', () => {
             id += letters[Math.floor(Math.random() * letters.length)];
         }
 
+
         // sets up the name of the document that will be added to de firestor db
         let docName= `${blogTitle}-${id}`;
         let date = new Date(); // for published at info
@@ -80,6 +87,7 @@ publishBtn.addEventListener('click', () => {
             publishedAt: `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`
         })
         .then(() => {
+
 
           location.href = `/${docName}`; // when made, it sends you to the finished blog page.
 

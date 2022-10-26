@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="/css/noticias.css" type="text/css">
 
-    <title>Blog</title>
+    <title>Noticias</title>
 </head>
 <body>
 
@@ -22,12 +23,11 @@
             <a href="/" style="text-decoration: none;">
                 <img src="/images/icono.png" height="50px" width="50px"> Pokenews
             </a>
-            <a href="/editor" style="text-decoration: none;">Crea un blog</a>
-            <a href="#" style="text-decoration: none;">Noticias</a>
-
+            <a href="/index" style="text-decoration: none;">Blog</a>
+            <a href="/news" style="text-decoration: none;">Noticias</a>
             <a href="#" style="text-decoration: none;">Contacto</a>
             <a href="#" style="text-decoration: none;">Nosotros</a>
-            <div class="animation start-pokenews" ></div>
+            <div class="animation start-noticias" ></div>
         </nav>
     </div>
 
@@ -71,52 +71,38 @@
         </a>
     </div>
 
-    <!-- cards -->
-    <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top" src="/images/datocurioso1.jpg" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">El Pokémon más feo y el más bonito</h5>
-            <p class="card-text">Según la propia Pokédex el Pokémon más feo de todas las criaturas del juego sería Feebas, un Pokémon tipo agua de la tercera generación y contraparte de Magikarp. Por el contrario, el Pokémon que es reconocido como el más hermoso es la propia evolución de Feebas, Milotic. Feebas evoluciona a Milotic cuando su belleza aumenta a 170 puntos y subiendo un nivel, o bien intercambiándolo equipado con escama bella.</p>
+    <main>
+        <!--Noticias   -->
+        <section class="noticia">
+            <header>
+                <h1>Poke Noticias</h1>
+            </header>
+            <article>
+                <h2 class="noticia-titulo">Como mejorar el cuidado de tu Charmander</h2>
+                <img class="noticia-imagen" src="/images/charmander.jpeg" alt="Imagen noticia">
+                <p class="noticia-texto">Todo dueño de Charmander sabe que hay veces que este hermoso pokemos tipo fuego puede llegar a ser un poco intenso, pero el secreto detras de poder tener una excelente relacion y que ambos crescan y se desarrollen juntos esta en que tienes que confiar mas en el y tienes que hacerlo ver que el siempre va a poder confiar contigo. Entrenar no lo es todo tambien puedes jugar con el, llevarlo a que conosca a otros pokemons, compartir el almuerzo (teniendo en cuenta una dieta saludable para los dos) y lo mas importante de todo es respetarlo y amarlo sobre todo. </p>
+                <p class="card-text"><small class="text-muted">Last updated 18 mins ago</small></p>
+            </article>
+            <article>
+                <h2 class="noticia-titulo">No sabes que evolucion de Eevee prefieres? Te ayudamos!</h2>
+                <img class="noticia-imagen" src="/images/eevee.jpg" alt="Imagen noticia">
+                <p class="noticia-texto">Sabemos que puede ser dificl para un entrenador de eevees el decidir a que va a evolucionar  su queridisimo pokemon y mas sabiendo que las 3 evoluciones son igual de fuertes y que obviamente cada una de ellas tiene sus venajas y desventajas en pelea, pero el secreto en elegir correctamente es que no hay eleccion correcta. Lo que uno tiene que hacer es seguir a su corazon y el te dira cual es la mejor opcion,  incluso si no quieres evolucionarlo no tienes que! Puedes ser un entrenador de eevees sin la necesidad de evolucionarlo. Lo mas importante aqui es que tu y tu pokemon sean felices juntos.</p>
+                <p class="card-text"><small class="text-muted">Last updated 31 mins ago</small></p>
+            </article><article>
+                <h2 class="noticia-titulo">Como cuidar mejor de tu Charmander</h2>
+                <img class="noticia-imagen" src="/images/charmander.jpeg" alt="Imagen noticia">
+                <p class="noticia-texto">Texto de la noticia</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 hr ago</small></p>
+            </article><article>
+                <h2 class="noticia-titulo">Como cuidar mejor de tu Charmander</h2>
+                <img class="noticia-imagen" src="/images/charmander.jpeg" alt="Imagen noticia">
+                <p class="noticia-texto">Texto de la noticia</p>
+                <p class="card-text"><small class="text-muted">Last updated 17 hrs ago</small></p>
+            </article>
+        </section><!--Fin noticia -->
 
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-    </div>
-
-
-  
-      <!-- blogs section -->
-      <section class="blogs-section">
-      </section>
-  
-  
-            
-
-     <!-- firebase links -->
-<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-firestore-compat.js"></script>
-
-<script src="js/firebase.js"></script>
-<script src="js/index.js"></script>
-
+    </main>
+    
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
